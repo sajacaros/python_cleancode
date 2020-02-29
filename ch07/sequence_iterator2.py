@@ -1,4 +1,4 @@
-from dukim.log import logger
+from utils.log import logger
 
 class SequenceWrapper:
     def __init__(self, original_sequence):

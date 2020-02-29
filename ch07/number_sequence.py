@@ -1,4 +1,4 @@
-from dukim.ch07.log import logger
+from ch07.log import logger
 
 class NumberSequence:
     def __init__(self, start=0, step=1):

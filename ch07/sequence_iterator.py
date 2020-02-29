@@ -1,4 +1,4 @@
-from dukim.log import logger
+from utils.log import logger
 
 
 class SequenceIterator:
@@ -6,17 +6,16 @@ class SequenceIterator:
         self.current = start
         self.step = step
 
-    # def __iter__(self):
-    #     return self
+    def __iter__(self):
+        return self
 
-    def __next__(self):
-        value = self.current
-        self.current += self.step
-        return value
+    # def __next__(self):
+    #     value = self.current
+    #     self.current += self.step
+    #     return value
 
 
-if __name__== '__main__':
-
+if __name__=='__main__':
     si = SequenceIterator(1, 2)
     logger.info(next(si))
     logger.info(next(si))

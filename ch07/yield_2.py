@@ -1,9 +1,10 @@
-from dukim.log import logger
+from utils.log import logger
 
 
 def sequence(name, start, end):
     logger.info("%s started at %i", name, start)
     yield from range(start, end)
+
     logger.info("%s finished at %i", name, end)
     return end
 
@@ -21,9 +22,11 @@ if __name__ == '__main__':
     logger.info(next(g))
     logger.info(next(g))
     logger.info(next(g))
+
     logger.info(next(g))
     logger.info(next(g))
     logger.info(next(g))
     logger.info(next(g))
     logger.info(next(g))
+
     logger.info(next(g))

@@ -1,6 +1,3 @@
-from dukim.log import logger
-
-
 class ProtectedAttribute:
     def __init__(self, requires_role=None) -> None:
         self.permission_required = requires_role
