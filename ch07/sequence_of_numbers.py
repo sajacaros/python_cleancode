@@ -1,4 +1,4 @@
-from ch07.log import logger
+from utils.log import logger
 
 class SequenceOfNumbers:
     def __init__(self, start=0):

@@ -1,5 +1,5 @@
 from ch07._generate_data import PURCHASES_FILE, create_purchases_file
-from ch07.log import logger
+from utils.log import logger
 from itertools import tee
 from statistics import median
 from itertools import islice

@@ -1,4 +1,4 @@
-from ch07.log import logger
+from utils.log import logger
 
 class NumberSequence:
     def __init__(self, start=0, step=1):
